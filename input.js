@@ -28,8 +28,21 @@ const handleUserInput = function (key) {
   if (key === "d") {
     connection.write("Move: right");
   }
+  if (key === "t") {
+    connection.write("Say: YeehaW");
+  }
 };
 
 module.exports = {
   setupInput
 }
+
+// let stdin = process.stdin;
+// //Start typing a message less than 5 chars.
+// let arr = [];
+// stdin.on("data", (key) => {
+//   arr.push(key);
+//   if (arr.length >= 5) {
+//     let answer = arr.join("");
+//     connection.write(`Say: ${answer}`);
+//   }
